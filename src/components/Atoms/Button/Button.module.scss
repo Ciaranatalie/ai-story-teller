@@ -1,0 +1,12 @@
+.main {
+    padding:6px 8px;
+    background-color: var(--color-0);
+    color:var(--color-100);
+    border:none;
+    cursor: pointer;
+    transition: all 0.35s ease;
+
+    &:hover{
+        background-color: var(--color-80);
+    }
+}

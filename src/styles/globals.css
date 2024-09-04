@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&display=swap');
+
+:root {
+  --primary-color:#39FF14;
+  --color-0: #A4FF00;
+  --color-20: #00BFFF;
+  --color-80: #1E90FF;
+  --color-100: #2C003E;
+
+
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  font-family: "Handjet", sans-serif;
+  max-width: 100vw;
+  overflow-x: hidden;
+  color: var(--color-0);
+  background-color: var(--color-0);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
