@@ -1,5 +1,6 @@
-import Button from '@/components/Atoms/Button/Button';
+import Button from "../../Atoms/Button/Button";
 import style from './Header.module.scss';
+import React from 'react';
 
 interface HeaderProps{
     title: string;
