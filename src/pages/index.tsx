@@ -28,7 +28,9 @@ export default function Home() {
           <div className = {style.container}>
           </div>
           <div className = {style.container}>
-            <SelectBox label="ciao" list={listaGeneri}/>
+            <SelectBox label="ciao" list={listaGeneri} setAction={function (value: React.SetStateAction<string>): void {
+                throw new Error("Function not implemented.");
+              } }/>
           <InputBox 
             label="Nome Protagonista"
             value={protagonista}
