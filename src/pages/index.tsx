@@ -1,6 +1,6 @@
 import React, { useState } from "react";
+import style from "../styles/Home.module.scss";
 import Head from "next/head";
-import style from "@/styles/Home.module.css";
 import Header from "../components/Molecules/Header/Header";
 import WindowBox from "../components/Organism/WindowBox/WindowBox";
 import InputBox from "../components/Molecules/InputBox/InputBox";
