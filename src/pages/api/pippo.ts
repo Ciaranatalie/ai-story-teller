@@ -17,14 +17,14 @@ export default function handler(
   res: NextApiResponse<any>,
 ) {
 
-  req.body
+  
 
   if (req.method === "GET") {
     res.status(200).json(risposta);
   } else if (req.method === "POST") {
     const {saluto} = JSON.parse(req.body)
     if (saluto) {
-      res.status(200).json("HELLO!!!!");
+      res.status(200).json("PIPPO HELLO!!!!");
     } else {
       res.status(404).json("Manca saluto");
     }
