@@ -17,7 +17,7 @@ export default function handler(
   res: NextApiResponse<any>,
 ) {
 
-  req.body
+  
 
   if (req.method === "GET") {
     res.status(200).json(risposta);

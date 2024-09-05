@@ -1,3 +1,5 @@
+@import "../styles/default/mixins";
+
 .main {
   min-height: 100vh;
  
@@ -7,15 +9,16 @@
    .container {
      display: flex;
      gap: 20px;
+     border-radius: 10px;
    }
  
    .result {
      @include window-style(100%);
-     margin-top: rem(20px);
+     margin-top: rem(20px, 16px);
      box-shadow: none;
  
      .btn {
-       margin-bottom: rem(10px);
+      margin-bottom: rem(10px, 16px);
      }
    }
   }

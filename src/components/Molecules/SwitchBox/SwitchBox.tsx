@@ -1,6 +1,6 @@
 import { Dispatch, SetStateAction } from "react";
 import style from "./SwitchBox.module.scss";
-import Switch from "../../Atoms/Switch/Switch"; 
+import Switch from "../../Atoms/Switch/Switch";
 import React from "react";
 
 interface SwitchBoxProps {
