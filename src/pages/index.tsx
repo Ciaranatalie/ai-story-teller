@@ -25,6 +25,8 @@ export default function Home() {
   const [response, setResponse] = useState("");
   const [isPlaying, setIsPlaying] = useState(false);
 
+  const [showHamburger, setShowHamburger] = useState(false);
+
   const handleGenerate = async () => {
     setLoading(true);
     setError(false);
@@ -82,7 +84,17 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={style.main}>
-        <Header title="AI Story Teller" />
+        <Header 
+        title="AI Story Teller" 
+        showHamburger ={showHamburger} 
+        setShowHamburger ={setShowHamburger} />
+        <div className={`${style.hamburgerWindow} ${showHamburger ? style.active : "" }`}>hamburger </div>
+        {
+          showHamburger && (
+          <div 
+          className= {`${style.mask} ${showHamburger ? style.active : ""}`}
+          />
+        )}
         <div className={style.content}>
           {error && (
             <Toast
