@@ -85,16 +85,16 @@ export default function Home() {
       </Head>
       <main className={style.main}>
         <Header 
-        title="AI Story Teller" 
-        showHamburger ={showHamburger} 
-        setShowHamburger ={setShowHamburger} />
-        <div className={`${style.hamburgerWindow} ${showHamburger ? style.active : "" }`}>hamburger </div>
-        {
-          showHamburger && (
-          <div 
-          className= {`${style.mask} ${showHamburger ? style.active : ""}`}
-          />
-        )}
+        title="AI Story Teller"
+        showHamburger={showHamburger}
+        setShowHamburger={setShowHamburger}
+      />
+      <div
+        className={`${style.hamburgerWindow} ${
+          showHamburger ? style.active : ""
+        }`}
+      />
+      <div className={`${style.mask} ${showHamburger ? style.active : ""}`} />
         <div className={style.content}>
           {error && (
             <Toast

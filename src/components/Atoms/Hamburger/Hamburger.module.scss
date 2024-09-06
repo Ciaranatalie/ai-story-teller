@@ -1,5 +1,5 @@
 .main {
-    width: 25 px;
+    width: 25px;
     height: 20px;
     display: flex;
     flex-direction: column;
@@ -7,21 +7,21 @@
     cursor: pointer;
     position: relative;
 
-    .breadUp, .breadDown .hamburger {
+    .breadUp, .breadDown, .hamb {
         width: 100%;
         height: 3px;
-        border-radius:3px;
-        background-color: black;   
+        border-radius: 3px;
+        background-color: #af6f6f;
         opacity: 1;
         transition: all 0.35s ease;
     }
 
-    &.active .hamburger {
+    &.active .hamb {
         opacity: 0;
     }
 
     &.active .breadUp {
-        transform: rotate(45deg) transletY(6px) translateX(5.8px);
+        transform: rotate(45deg) translateY(6px) translateX(5.8px);
     }
     &.active .breadDown {
         transform: rotate(-45deg) translateY(-6px) translateX(5.8px);

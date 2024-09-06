@@ -5,14 +5,23 @@
 
   .hamburgerWindow {
     width: 600px;
-    border: 1px solid var(--color-100);
-    height: calc(100% - 80px);
-    position: fixed;
-    right: -600px;
-    top: 80px;
-    transition: all 0.35s ease;
-    z-index: 20;
-    box-shadow: 5px 5px 5px var(--color-100);
+  border: 1px solid #baac97;
+  height: calc(100% - 80px);
+  position: fixed;
+  background-color: #fff;
+  right: -600px;
+  top: 80px;
+  transition: all 0.35s ease;
+  z-index: 20;
+  box-shadow: 5px 5px 5px #2524224d;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  &.active {
+    right: 0;
+  }
 
     .mask {
       position: fixed;
@@ -26,7 +35,8 @@
     }
 
     &.active {
-      right: 0;
+      z-index: 19;
+      opacity: 1;
     }
   }
  
